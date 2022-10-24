@@ -1,7 +1,7 @@
 //FileName: app.js
 //created by Deepa k
 // student id :301250548
-//30th September
+//22 nd October,2022
 
 //installed third party packAGES
 
@@ -86,7 +86,7 @@ app.use(express.static(path.join(__dirname, '../../node_modules')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/contact-list', contactsRouter);   // added contact list to app.use, calls book list from the contacts router
+app.use('/contact-list', contactsRouter);   // added contact list to app.use, calls contact list from the contacts router
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
