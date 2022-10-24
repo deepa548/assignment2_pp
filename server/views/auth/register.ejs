@@ -1,0 +1,59 @@
+<!--FileName: login.ejs
+//created by Deepa k
+// student id :301250548
+//10 Oct-->
+
+<%- include ("../partials/header") %>
+<%- include ("../partials/main_nav") %>
+
+<main class="container">
+
+<!--Message Area-->
+<% if(messages.length > 0 ) { %>
+<div class="alert alert-danger">
+    <%=messages %>
+</div>
+<% } %>
+<div class="container-sm">
+<div class="text-center">
+    <div class="offset-md-4 col-md-4">
+        <form method="POST" autocomplete="off">
+            <img class="rounded mx-auto d-block" src="Assets/images/logoimg.png" alt="logo" width="72" height="57">
+            <h1 class="h3 mb-3 fw-normal">Please Register</h1>
+        
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="username" name="username" placeholder="Enter User Name" required autofocus>
+              <label for="username">User Name</label>
+            </div>
+            
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+              <label for="password">Password</label>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="email" name="email" placeholder="Enter Email Address" required autofocus>
+              <label for="email">Email:</label>
+            </div>
+            
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="displayName" name="displayName" placeholder="Enter Display Name" required autofocus>
+              <label for="displayName">Display Name</label>
+            </div>
+            
+            <div class="mb-3">
+                <input class="btn btn-lg btn-success" type="submit" value="Register">
+                <a href="/">
+                    <input type="button" class="btn btn-lg btn-warning" value="Cancel">
+                </a> 
+            </div>
+          </form>
+    </div>
+</div>
+</div>
+</main>
+
+
+
+<%- include ("../partials/bottom_nav") %>
+<%- include ("../partials/footer") %>
